@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusCribs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="images/Final-logo.ico" alt="">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="index.html">home</a> </li>
+          <li><a href="About.html">about</a> </li>
+          <li><a href="Rooms.html">Rooms</a> </li>
+          <li><a href="contact.html">Contact</a> </li>
+          <li>
+            <a href="https://www.magicbricks.com/mbprime/primePackages?source=MBPrime_SRP_Item-defaultTemplate&category=r&ptype=10002&cityCnd=7062" class="search-link">
+                <i class="fa fa-search"></i>
+            </a>
+        </li>        
+          <li><a href="pay.html" class="primary-link"> BOOK NOW </a> </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+
+  <section class="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./Images/banner-3.png" alt="">
+          <div class="text">
+            <h1>PG OUR HOME</h1>
+            <p>Experience unparalleled comfort and convenience with our PG accommodations, where every stay feels like a home away from home.
+            </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <a href="contact.html" class="secondary-btn">CONTACT US</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./Images/banner-1.png" alt="">
+          <div class="text">
+            <h1>GET PREMIUM FLATS</h1>
+            <p>Elevate your living standards and embrace a vibrant community atmosphere in our thoughtfully designed PG spaces.
+            </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <a href="contact.html" class="secondary-btn">CONTACT US</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./Images/banner-2.png" alt="">
+          <div class="text">
+            <h1>WELCOME TO WEBSITE</h1>
+            <p>Discover a haven of tranquility and camaraderie, where comfort meets community in our premier PG accommodations.
+            </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <a href="contact.html" class="secondary-btn">CONTACT US</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+
+  <section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Book </span> Your Rooms </h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Araival Date">
+          <input type="date" placeholder="Departure Date">
+          <input type="number" placeholder="Rooms">
+          <input type="number" placeholder="Friends">
+          <input type="submit" value="CHECK AVAILABILITY">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about top">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h1>WELCOME</h1>
+          <h2>PG OUR HOME</h2>
+        </div>
+        <p>Discover the essence of home at "Our Home" PG. Nestled in the heart of [City Name], our cozy accommodations offer a perfect blend of comfort and community. Each room is thoughtfully designed for privacy and relaxation, featuring modern furnishings and ample storage space. Embrace the spirit of camaraderie in our communal areas, from the vibrant lounge to the communal kitchen. With convenient access to transportation and nearby amenities, Our Home PG is ideal for students, professionals, and travelers seeking a welcoming and convenient living experience. Come join our family and make Our Home your home away from home</p>
+        <a href="About.html" class="primary-btn">ABOUT US</a>
+      </div>
+      <div class="right">
+        <img src="./Images/about.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box">
+        <h1>2500</h1>
+        <hr>
+        <span>Customer</span>
+      </div>
+      <div class="box">
+        <h1>1250</h1>
+        <hr>
+        <span>Happy Customer</span>
+      </div>
+      <div class="box">
+        <h1>15</h1>
+        <hr>
+        <span>Expert Technicians</span>
+      </div>
+      <div class="box">
+        <h1>355</h1>
+        <hr>
+        <span>Desktop Reaired</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rooms">
+    <div class="container top">
+      <div class="heading">
+        <h1>EXPOLRE</h1>
+        <h2>Our PG Top 5 star Rooms</h2>
+        <p>Indulge in luxury and comfort at our top-tier rooms, meticulously designed to exceed your expectations. Each room offers a serene retreat with modern amenities, plush furnishings, and stunning views.
+        </p>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="image">
+              <img src="images/room-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Rubbi PG</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Our PG offers a welcoming atmosphere where residents become part of a vibrant community, fostering lasting friendships and memorable experiences.
+              </p>
+              <div class="button flex">
+                <a href="pay.html" class="primary-btn">BOOK NOW</a>
+                <h3>8000rs <span> <br> Per month </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>StarDeep PG</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Our PG offers a welcoming atmosphere where residents become part of a vibrant community, fostering lasting friendships and memorable experiences.
+              </p>
+              <div class="button flex">
+                <a href="pay.html" class="primary-btn">BOOK NOW</a>
+                <h3>11000rs <span> <br> Per month </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-3.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Govind PG</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>With convenient amenities and well-appointed spaces, our PG ensures comfort and convenience for residents, creating a home away from home.
+              </p>
+              <div class="button flex">
+                <a href="pay.html" class="primary-btn">BOOK NOW</a>
+                <h3>20000rs <span> <br> Per month </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-4.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Mayank PG</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Experience the epitome of comfort and convenience at our PG, where personalized service and attention to detail elevate your living experience so please visit in or PG we will we happy.
+              </p>
+              <div class="button flex">
+                <a href="pay.html" class="primary-btn">BOOK NOW</a>
+                <h3>15000rs <span> <br> Per month </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-5.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Patelnagar PG</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>With convenient amenities and well-appointed spaces, our PG ensures comfort and convenience for residents, creating a home away from home so please visit in or PG we will we happy.
+              </p>
+              <div class="button flex">
+                <a href="pay.html" class="primary-btn">BOOK NOW</a>
+                <h3>75000rs <span> <br> Per month </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-6.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Marvel PG</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Experience the epitome of comfort and convenience at our PG, where personalized service and attention to detail elevate your living experience so please visit in or PG we will we happy.
+              </p>
+              <div class="button flex">
+                <a href="pay.html" class="primary-btn">BOOK NOW</a>
+                <h3>$800 <span> <br> Per month </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-7.png" alt="">
+            </div>
+            <div class="text">
+              <h2>StarCity PG</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>With convenient amenities and well-appointed spaces, our PG ensures comfort and convenience for residents, creating a home away from home.
+              </p>
+              <div class="button flex">
+                <a href="pay.html" class="primary-btn">BOOK NOW</a>
+                <h3>9000rs <span> <br> Per month </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-8.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Happy PG</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Experience the epitome of comfort and convenience at our PG, where personalized service and attention to detail elevate your living experience visit in or PG we will we happy.
+              </p>
+              <div class="button flex">
+                <a href="pay.html" class="primary-btn">BOOK NOW</a>
+                <h3>12000rs <span> <br> Per month </span> </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="gallery">
+    <div class="container top">
+      <div class="heading">
+        <h1>PHOTOS</h1>
+        <h2>Our Top Rooms Gallery</h2>
+        <p>Capturing the essence of comfort and elegance, our room photos showcase inviting spaces designed to provide a relaxing and memorable stay for our guests.
+      </div>
+    </div>
+
+    <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-1.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Tranquil Retreat Suite.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-2.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Luxury Haven Escape</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-3.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Elegant Serenity Chamber</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Comfort Oasis Hideaway</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-5.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Chic Urban Sanctuary</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-6.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Chic Urban Sanctuary</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Luxury Haven Escape</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-3.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Chic Urban Sanctuary</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-1.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Chic Urban Sanctuary</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-6.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Chic Urban Sanctuary</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+
+  <section class="services top">
+    <div class="container">
+      <div class="heading">
+        <h1>SERVICES</h1>
+        <h2>PG Services</h2>
+        <p>Experience a range of top-notch services including delicious dining, fitness facilities, in-house restaurant, and rejuvenating spa treatments, all tailored to enhance your stay at our PG.
+      </div>
+
+
+      <div class="content flex_space">
+        <div class="left grid2">
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <h3>Tea and Juice</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-person-biking"></i>
+              <h3>Fintness</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>Healthy Food</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-spa"></i>
+              <h3>Good Environment</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="images/service.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="Customer top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Impeccably clean rooms with modern amenities, our stay at the PG exceeded expectations. The spaciousness and attention to detail made our visit comfortable and enjoyable. From the cozy beds to the sleek décor, every aspect reflected a high standard of quality.</p>
+          <h3>CU Student</h3>
+          <label>Shashank Kumar</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Stunning room views coupled with exceptional service made our stay memorable. The ambiance was serene, perfect for relaxation after a day of exploration. We particularly appreciated the seamless check-in process and the friendly staff who ensured our comfort throughout.</p>
+          <h3>Landra Student</h3>
+          <label>Pratyush Rai</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Our experience at the PG was nothing short of exceptional. The rooms were tastefully decorated and provided a welcoming atmosphere. The attention to cleanliness and the thoughtful amenities truly set this accommodation apart. We can't wait to return for another delightful stay</p>
+          <h3>CU Student</h3>
+          <label>Chetan Kumar</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1,
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="news top rooms">
+    <div class="container">
+      <div class="heading">
+        <h1>NEWS</h1>
+        <h2>Our Trending Rooms</h2>
+        <p>Experience the epitome of modern comfort and style in our trending room, where sleek design meets luxurious amenities for an unforgettable stay
+      </div>
+
+
+      <div class="content flex">
+        <div class="left grid2">
+          <div class="items">
+            <div class="image">
+              <img src="./Images/show3.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Mushroom PG.</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Patel</label>
+                <i class="fa fa-heart"></i>
+                <label>500</label>
+                <i class="fa fa-comments"></i>
+              </div>
+              <p>Experience the epitome of modern comfort and style in our trending room, where sleek design meets luxurious amenities for an unforgettable stay.</p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="./Images/blog-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Bharat PG.</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Mayank</label>
+                <i class="fa fa-heart"></i>
+                <label>580</label>
+                <i class="fa fa-comments"></i>
+              </div>
+              <p>Experience the epitome of modern comfort and style in our trending room, where sleek design meets luxurious amenities for an unforgettable stay.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="box flex">
+            <div class="img">
+              <img src="images/blog-s1.jpeg" alt="">
+            </div>
+            <div class="stext">
+              <h2>Shkunta PG</h2>
+              <p>Our rooms offer unparalleled comfort and style, ensuring a relaxing and memorable.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="images/blog-s2.jpeg" alt="">
+            </div>
+            <div class="stext">
+              <h2>Lakshmi PG</h2>
+              <p>Experience the perfect blend of elegance and convenience in our thoughtfully designed.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="images/blog-s3.jpeg" alt="">
+            </div>
+            <div class="stext">
+              <h2>NRI PG</h2>
+              <p>Our rooms offer unparalleled comfort and style, ensuring a relaxing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter mtop">
+    <div class="container flex_space">
+      <h1>Subscribe For Discount</h1>
+      <input type="email" placeholder="Your Email">
+      <input type="submit" value="Subscribe">
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container grid">
+      <div class="box">
+        <img src="images/Final-logo.ico" alt="">
+        <p>PG Our Home offers a cozy and welcoming atmosphere for tenants, providing well-maintained rooms equipped with essential amenities. Our commitment to cleanliness, safety, and convenience ensures a comfortable living experience. With affordable rates and a friendly environment, PG Our Home is the perfect choice for those seeking a hassle-free accommodation solution.</p>
+
+        <div class="icon">
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/pratyush_08_/"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/pratyushrai08"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.youtube.com/watch?v=mn0VjII6sZc"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="History.html">Company History</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="tel:+7675964743">Contact Us</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Contact Us</h2>
+        <p>Contact Us any time We are 24/7 available for you please subscribe Us.</p>
+        <i class="fa fa-location-dot"></i>
+        <label><a href="https://maps.google.com/maps?q=1201+park+street,+Avenue,+Dhanmondy,+Dhaka" target="_blank">1201 park street, Avenue, Dhanmondy, Dhaka.</a></label><br>
+        <i class="fa fa-phone"></i>
+        <label><a href="tel:+7675964743">[88] 657 524 332</a></label><br>
+        <i class="fa fa-envelope"></i>
+        <label><a href="mayankpatelacc2003@gmail.com">info@dentar.com</a></label><br>
+      </div>
+      
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

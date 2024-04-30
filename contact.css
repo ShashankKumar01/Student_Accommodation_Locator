@@ -1,0 +1,91 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0dcdc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Image Styles */
+img {
+    opacity: 0.8; /* Reduce opacity for a subtle effect */
+    transition: opacity 0.3s ease; /* Add smooth transition for opacity */
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #0056b3; /* Add border bottom for a distinct separation */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for background-color and box-shadow */
+}
+
+/* Hover effect for header */
+header:hover {
+    background-color: #0056b3; /* Darken the background color on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Increase box shadow on hover */
+}
+
+/* Heading Styles */
+h1 {
+    margin: 0;
+}
+
+/* Contact Form and Contact Info Styles */
+.contact-form, .contact-info {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to the contact forms */
+}
+
+/* Heading Styles for Contact Form and Contact Info */
+.contact-form h2, .contact-info h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333; /* Darken label color for better readability */
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Add transition for border-color */
+}
+
+/* Input and Textarea Focus Styles */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Change border color on focus */
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition for background-color */
+}
+
+/* Button Hover Styles */
+button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+}
+

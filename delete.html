@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Payment</title>
+    <!-- Include Paytm SDK -->
+    <script src="https://securegw.paytm.in/merchantpgpui/checkoutjs/merchants/your-merchant-id.js"></script>
+</head>
+<body>
+    <h1>Make a Payment</h1>
+    <form id="paymentForm" method="post" action="process_payment.php">
+        <input type="text" name="orderId" value="ORDER_ID">
+        <input type="text" name="customerId" value="CUSTOMER_ID">
+        <input type="text" name="amount" value="AMOUNT">
+        <input type="text" name="email" placeholder="Email">
+        <input type="text" name="phone" placeholder="Phone">
+        <button type="button" onclick="makePayment()">Pay Now</button>
+    </form>
+
+    <script>
+        function makePayment() {
+            var orderId = document.querySelector('input[name="orderId"]').value;
+            var customerId = document.querySelector('input[name="customerId"]').value;
+            var amount = document.querySelector('input[name="amount"]').value;
+            var email = document.querySelector('input[name="email"]').value;
+            var phone = document.querySelector('input[name="phone"]').value;
+
+            var options = {
+                "order_id": orderId,
+                "customer_id": customerId,
+                "amount": amount,
+                "email": email,
+                "phone": phone,
+                "callback_url": "http://yourwebsite.com/payment_response.php"
+            };
+
+            Paytm.CheckoutJS.init(options).then(function onSuccess() {
+                Paytm.CheckoutJS.invoke();
+            }).catch(function onError(error) {
+                console.log("Error:", error);
+            });
+        }
+    </script>
+</body>
+</html>
